@@ -13,7 +13,7 @@
         self.settings = settings;
         self.firebaseClass = [FIRAnalytics class];
 
-        if (![FIRApp defaultApp]) {
+        if ([FIRApp defaultApp]) {
             SEGLog(@"[FIRApp Configure] already called, skipping");
             return self;
         }
